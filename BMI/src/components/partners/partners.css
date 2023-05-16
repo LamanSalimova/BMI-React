@@ -1,0 +1,29 @@
+.partnersSection {
+  background: #f8f8f8;
+  margin-top: 80px;
+  padding: 28px 0;
+}
+.partnersSection .partnersHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+}
+.partnersSection .partnersHeader span {
+  width: 70px;
+  height: 4px;
+  background: #193263;
+}
+.partnersSection .partnersHeader h4 {
+  color: #3e3b3b;
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 500;
+  font-family: Poppins;
+}
+.partnersSection .partnerSlide {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin: 20px 0;
+}/*# sourceMappingURL=partners.css.map */

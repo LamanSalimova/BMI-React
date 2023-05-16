@@ -1,0 +1,155 @@
+$baseColor: #193263;
+
+.trainingsSection {
+  margin-top: 60px;
+
+  .trainingsHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+    margin: 20px 0;
+
+    span {
+      width: 70px;
+      height: 4px;
+      background: $baseColor;
+    }
+    h4 {
+      color: #3e3b3b;
+      font-size: 30px;
+      line-height: 45px;
+      font-weight: 500;
+      font-family: Poppins;
+    }
+  }
+  .generalTrainings {
+    background-color: #3d54a1;
+    padding: 60px 0;
+
+    .trainingsWrapper {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 20px;
+
+      .trainingItem {
+        width: 100%;
+        min-height: 290px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 20px;
+
+        .onOff {
+          width: 40%;
+          height: auto;
+          display: flex;
+          justify-content: center;
+          column-gap: 6px;
+          background: #3d54a1;
+          color: #fff;
+          align-items: center;
+          padding: 6px;
+          border-radius: 10px;
+        }
+        h5 {
+          color: #ffffff;
+          font-size: 21px;
+          font-family: Poppins;
+          line-height: 29px;
+          font-weight: 600;
+          position: relative;
+        }
+
+        h5::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -10px;
+          width: 70px;
+          height: 4px;
+          background-color: #fff;
+        }
+
+        p {
+          color: #ffffff;
+          font-size: 17px;
+          font-family: Poppins;
+          line-height: 26px;
+        }
+        a {
+          text-decoration: none;
+          padding: 10px 20px;
+          border-radius: 10px;
+          background: #3d54a1;
+          color: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+// ========Responsive Design=================
+@media only screen and (max-width: 600px) {
+  .trainingsSection {
+    .generalTrainings {
+      .trainingsWrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .trainingsSection {
+    .generalTrainings {
+      .trainingsWrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .trainingsSection {
+    .generalTrainings {
+      .trainingsWrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .trainingsSection {
+    .generalTrainings {
+      .trainingsWrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .trainingsSection {
+    .generalTrainings {
+      .trainingsWrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+      }
+    }
+  }
+}

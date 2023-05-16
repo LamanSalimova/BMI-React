@@ -1,0 +1,34 @@
+$baseColor: #193263;
+$darkBgColor: #202f3f;
+$blueBgColor: #3d54a1;
+$applyBgColor: #db353a;
+$grayFontColor: #838383;
+$darkFontColor: #303030;
+$borderColor: #c6c6c6;
+.accordionWrapper {
+  width: 100%;
+  height: 100%;
+  .accordion {
+    margin: 10px;
+    .accordionHeader {
+      background: #eceef6;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 20px;
+      border-top: 2px solid $blueBgColor;
+
+      p {
+        font-size: 1.5rem;
+        line-height: 36px;
+        font-weight: 600;
+        color: $darkFontColor;
+      }
+    }
+    .accordionBody {
+      p {
+        line-height: 28px;
+        color: $darkFontColor;
+      }
+    }
+  }
+}

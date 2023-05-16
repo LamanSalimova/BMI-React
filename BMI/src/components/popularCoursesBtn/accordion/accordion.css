@@ -1,0 +1,24 @@
+.accordionWrapper {
+  width: 100%;
+  height: 100%;
+}
+.accordionWrapper .accordion {
+  margin: 10px;
+}
+.accordionWrapper .accordion .accordionHeader {
+  background: #eceef6;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-top: 2px solid #3d54a1;
+}
+.accordionWrapper .accordion .accordionHeader p {
+  font-size: 1.5rem;
+  line-height: 36px;
+  font-weight: 600;
+  color: #303030;
+}
+.accordionWrapper .accordion .accordionBody p {
+  line-height: 28px;
+  color: #303030;
+}/*# sourceMappingURL=accordion.css.map */

@@ -1,0 +1,77 @@
+.bannerSection {
+  width: 100%;
+  height: 65vh;
+  background-image: url("../../assets/images/bannerBg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bannerSection .bannerInfoWrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.bannerSection .bannerInfoWrapper .bannerContent {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 30%;
+}
+.bannerSection .bannerInfoWrapper .bannerContent h1 {
+  color: #fff;
+  font-size: calc(1.375rem + 1.5vw);
+  font-weight: 600;
+  font-family: Poppins;
+}
+.bannerSection .bannerInfoWrapper .bannerContent a {
+  padding: 10px 20px;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  text-decoration: none;
+  width: 100%;
+  max-width: 220px;
+}
+.bannerSection .bannerInfoWrapper .bannerContent a:hover {
+  background-color: #fff;
+  color: #000000;
+  animation: pulse-2 1s ease infinite;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .bannerSection {
+    margin-top: 0;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .bannerSection {
+    margin-top: 0;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .bannerSection {
+    margin-top: 0;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .bannerSection {
+    margin-top: 0;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .bannerSection {
+    margin-top: 40px;
+  }
+}/*# sourceMappingURL=banner.css.map */

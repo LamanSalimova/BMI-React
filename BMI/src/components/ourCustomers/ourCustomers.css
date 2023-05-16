@@ -1,0 +1,24 @@
+.ourCustomersSection .customersHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+}
+.ourCustomersSection .customersHeader span {
+  width: 70px;
+  height: 4px;
+  background: #193263;
+}
+.ourCustomersSection .customersHeader h4 {
+  color: #3e3b3b;
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 500;
+  font-family: Poppins;
+}
+.ourCustomersSection .customerSlide {
+  margin: 20px 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}/*# sourceMappingURL=ourCustomers.css.map */

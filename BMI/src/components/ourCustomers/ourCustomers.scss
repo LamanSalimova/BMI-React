@@ -1,0 +1,31 @@
+$baseColor: #193263;
+$darkBgColor: #202f3f;
+$blueBgColor: #3d54a1;
+$applyBgColor: #db353a;
+.ourCustomersSection {
+  .customersHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+
+    span {
+      width: 70px;
+      height: 4px;
+      background: $baseColor;
+    }
+    h4 {
+      color: #3e3b3b;
+      font-size: 30px;
+      line-height: 45px;
+      font-weight: 500;
+      font-family: Poppins;
+    }
+  }
+
+  .customerSlide {
+    margin: 20px 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+}

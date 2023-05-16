@@ -1,0 +1,34 @@
+$baseColor: #193263;
+$darkBgColor: #202f3f;
+$blueBgColor: #3d54a1;
+$applyBgColor: #db353a;
+.partnersSection {
+  background: #f8f8f8;
+  margin-top: 80px;
+  padding: 28px 0;
+  .partnersHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+
+    span {
+      width: 70px;
+      height: 4px;
+      background: $baseColor;
+    }
+    h4 {
+      color: #3e3b3b;
+      font-size: 30px;
+      line-height: 45px;
+      font-weight: 500;
+      font-family: Poppins;
+    }
+  }
+
+  .partnerSlide {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 20px 0;
+  }
+}

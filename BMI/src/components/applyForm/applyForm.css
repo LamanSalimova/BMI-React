@@ -1,0 +1,135 @@
+.applyForm {
+  background-image: url("../../assets/images/lightBg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 40px 0;
+}
+.applyForm .formHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  margin: 20px 0;
+}
+.applyForm .formHeader span {
+  width: 70px;
+  height: 4px;
+  background: #193263;
+}
+.applyForm .formHeader h4 {
+  color: #3e3b3b;
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 500;
+  font-family: Poppins;
+}
+.applyForm form .formWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  row-gap: 20px;
+  align-items: center;
+}
+.applyForm form .formWrapper select {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 12px;
+  border-radius: 10px;
+  color: #6f6f6f;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: Poppins;
+  font-weight: 500;
+  border: 1px solid #ced4da;
+}
+.applyForm form .formWrapper .formItem {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.applyForm form .formWrapper .formItem label {
+  color: #303030;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Poppins;
+  font-weight: 500;
+}
+.applyForm form .formWrapper .formItem input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ced4da;
+}
+.applyForm form .formWrapper .formItem input::-moz-placeholder {
+  color: #6f6f6f;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: Poppins;
+  font-weight: 500;
+}
+.applyForm form .formWrapper .formItem input::placeholder {
+  color: #6f6f6f;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: Poppins;
+  font-weight: 500;
+}
+.applyForm form .btnWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.applyForm form .btnWrapper #submitBtn {
+  border: none;
+  outline: none;
+  background: #3d54a1;
+  border-radius: 5px;
+  padding: 10px 150px;
+  color: #fff;
+  margin: 30px 0;
+}
+.applyForm form .btnWrapper #submitBtn:hover {
+  animation: pulse-1 1s ease infinite;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .applyForm form .formWrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .applyForm form .formWrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .applyForm form .formWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .applyForm form .formWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .applyForm form .formWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}/*# sourceMappingURL=applyForm.css.map */

@@ -1,0 +1,226 @@
+.applyBtnSection ::-webkit-scrollbar {
+  width: 8px;
+  height: 6px !important;
+}
+.applyBtnSection ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #db353a;
+  border-radius: 10px;
+}
+.applyBtnSection ::-webkit-scrollbar-thumb {
+  background: #db353a;
+  border-radius: 10px;
+}
+.applyBtnSection ::-webkit-scrollbar-thumb:hover {
+  background: #a5aaad;
+}
+.applyBtnSection .applyBtn {
+  position: fixed;
+  top: 250px;
+  right: 0;
+  background: #db353a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 200px;
+  padding-right: 40px;
+  z-index: 999;
+}
+.applyBtnSection .applyBtn span {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+  font-family: Poppins;
+  color: #ffffff;
+}
+.applyBtnSection .applyBody {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: #fff;
+  z-index: 9999;
+  transition: transform 0.3s ease-out;
+  transform: translateX(100%);
+  padding: 20px;
+}
+.applyBtnSection .applyBody ::-webkit-scrollbar {
+  width: 8px;
+  height: 6px !important;
+}
+.applyBtnSection .applyBody ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #db353a;
+  border-radius: 10px;
+}
+.applyBtnSection .applyBody ::-webkit-scrollbar-thumb {
+  background: #db353a;
+  border-radius: 10px;
+}
+.applyBtnSection .applyBody ::-webkit-scrollbar-thumb:hover {
+  background: #a5aaad;
+}
+.applyBtnSection .applyBody .applyHeader {
+  display: flex;
+  justify-content: space-between;
+}
+.applyBtnSection .applyBody .applyHeader h4 {
+  color: #db353a;
+  font-weight: 700;
+  font-size: 28px;
+  font-family: Poppins;
+}
+.applyBtnSection .applyBody .applyHeader .closeBtnBox button {
+  border: none;
+  outline: none;
+  background: transparent;
+  border: 2px solid #db353a;
+  padding: 3px;
+  border-radius: 50%;
+  transition: 0.8s;
+}
+.applyBtnSection .applyBody .applyHeader .closeBtnBox button .icon {
+  color: #db353a;
+}
+.applyBtnSection .applyBody .applyHeader .closeBtnBox button:hover {
+  background: #db353a;
+}
+.applyBtnSection .applyBody .applyHeader .closeBtnBox button:hover .icon {
+  color: #fff;
+}
+.applyBtnSection .applyBody .applyForm {
+  background: transparent;
+}
+.applyBtnSection .applyBody .applyForm form .formWrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  row-gap: 20px;
+  align-items: center;
+}
+.applyBtnSection .applyBody .applyForm form .formWrapper select {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 12px;
+  border-radius: 10px;
+  color: #6f6f6f;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: Poppins;
+  font-weight: 500;
+  border: 1px solid #ced4da;
+}
+.applyBtnSection .applyBody .applyForm form .formWrapper .formItem {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.applyBtnSection .applyBody .applyForm form .formWrapper .formItem label {
+  color: #303030;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Poppins;
+  font-weight: 500;
+}
+.applyBtnSection .applyBody .applyForm form .formWrapper .formItem input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ced4da;
+}
+.applyBtnSection .applyBody .applyForm form .formWrapper .formItem input::-moz-placeholder {
+  color: #6f6f6f;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: Poppins;
+  font-weight: 500;
+}
+.applyBtnSection .applyBody .applyForm form .formWrapper .formItem input::placeholder {
+  color: #6f6f6f;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: Poppins;
+  font-weight: 500;
+}
+.applyBtnSection .applyBody .applyForm form .btnWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.applyBtnSection .applyBody .applyForm form .btnWrapper #submitBtn {
+  border: none;
+  outline: none;
+  background: #db353a;
+  border-radius: 5px;
+  padding: 10px 150px;
+  color: #fff;
+  margin: 30px 0;
+}
+.applyBtnSection .applyBody .applyForm form .btnWrapper #submitBtn:hover {
+  animation: pulse-1 1s ease infinite;
+}
+.applyBtnSection .applyBody.active {
+  transform: translateX(0);
+}
+.applyBtnSection .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-out;
+}
+.applyBtnSection .overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .applyBtnSection .applyBtn {
+    position: fixed;
+    right: -158px;
+  }
+  .applyBtnSection .applyBody {
+    width: 90%;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .applyBtnSection .applyBody {
+    width: 80%;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .applyBtnSection .applyBody {
+    width: 50%;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .applyBtnSection .applyBody {
+    width: 40%;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .applyBtnSection .applyBody {
+    width: 40%;
+  }
+}/*# sourceMappingURL=applyBtn.css.map */

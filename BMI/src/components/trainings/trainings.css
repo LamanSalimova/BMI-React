@@ -1,0 +1,123 @@
+.trainingsSection {
+  margin-top: 60px;
+}
+.trainingsSection .trainingsHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  margin: 20px 0;
+}
+.trainingsSection .trainingsHeader span {
+  width: 70px;
+  height: 4px;
+  background: #193263;
+}
+.trainingsSection .trainingsHeader h4 {
+  color: #3e3b3b;
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 500;
+  font-family: Poppins;
+}
+.trainingsSection .generalTrainings {
+  background-color: #3d54a1;
+  padding: 60px 0;
+}
+.trainingsSection .generalTrainings .trainingsWrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+.trainingsSection .generalTrainings .trainingsWrapper .trainingItem {
+  width: 100%;
+  min-height: 290px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.trainingsSection .generalTrainings .trainingsWrapper .trainingItem .onOff {
+  width: 40%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+  background: #3d54a1;
+  color: #fff;
+  align-items: center;
+  padding: 6px;
+  border-radius: 10px;
+}
+.trainingsSection .generalTrainings .trainingsWrapper .trainingItem h5 {
+  color: #ffffff;
+  font-size: 21px;
+  font-family: Poppins;
+  line-height: 29px;
+  font-weight: 600;
+  position: relative;
+}
+.trainingsSection .generalTrainings .trainingsWrapper .trainingItem h5::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 70px;
+  height: 4px;
+  background-color: #fff;
+}
+.trainingsSection .generalTrainings .trainingsWrapper .trainingItem p {
+  color: #ffffff;
+  font-size: 17px;
+  font-family: Poppins;
+  line-height: 26px;
+}
+.trainingsSection .generalTrainings .trainingsWrapper .trainingItem a {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: #3d54a1;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .trainingsSection .generalTrainings .trainingsWrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .trainingsSection .generalTrainings .trainingsWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .trainingsSection .generalTrainings .trainingsWrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .trainingsSection .generalTrainings .trainingsWrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .trainingsSection .generalTrainings .trainingsWrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+  }
+}/*# sourceMappingURL=trainings.css.map */

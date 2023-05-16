@@ -1,0 +1,297 @@
+$baseColor: #193263;
+$darkBgColor: #202f3f;
+$blueBgColor: #3d54a1;
+$applyBgColor: #db353a;
+$grayFontColor: #838383;
+$lightGrayFontColor: #939393;
+$darkFontColor: #303030;
+$borderColor: #c6c6c6;
+$formBorderColor: #e0dcdc;
+main {
+  .pageHeader {
+    margin: 24px 0;
+    .rootLinks {
+      display: flex;
+      align-items: center;
+      column-gap: 4px;
+      .routerLinkItem {
+        color: $grayFontColor;
+        font-family: Poppins;
+        line-height: 21px;
+        font-weight: 500;
+        text-decoration: none;
+      }
+      .chevronRight {
+        color: $grayFontColor;
+      }
+    }
+    h3 {
+      color: $darkFontColor;
+      font-family: Poppins;
+      font-size: 22px;
+      line-height: 33px;
+      font-weight: 700;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+    border-bottom: 1px solid $borderColor;
+  }
+
+  .contactSection {
+    margin: 40px 0;
+    .flex {
+      display: flex;
+
+      .contactBox {
+        max-width: 100%;
+        .contactInfoWrapper {
+          background-color: #3d54a1;
+          background-image: url("../../assets/images/bubbleBg.png");
+          padding: 40px 0;
+
+          .contactInfo {
+            display: flex;
+            column-gap: 80px;
+            justify-content: center;
+            align-items: center;
+
+            .contactInfoItem {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              row-gap: 20px;
+
+              span {
+                color: #fff;
+                font-size: 18px;
+                line-height: 27px;
+                font-weight: 500;
+              }
+            }
+          }
+        }
+
+        .contactForm {
+          border: 1px solid $formBorderColor;
+          padding: 40px;
+
+          form {
+            h5 {
+              color: $darkFontColor;
+              font-size: 20px;
+              line-height: 30px;
+              font-weight: 600;
+            }
+
+            input {
+              width: 100%;
+              border: none;
+              outline: none;
+              padding: 12px;
+              border-bottom: 1px solid $borderColor;
+
+              &::placeholder {
+                color: $lightGrayFontColor;
+                font-size: 15px;
+                line-height: 23px;
+                font-family: Poppins;
+                font-weight: 500;
+              }
+            }
+
+            textarea {
+              width: 100%;
+              border: none;
+              outline: none;
+              padding: 12px;
+              border: 1px solid $borderColor;
+              border-radius: 10px;
+              margin: 10px 0;
+            }
+
+            .buttonSWrapper {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              justify-content: space-between;
+
+              .submitBtn {
+                display: inline-block;
+                border: none;
+                outline: none;
+                background: $blueBgColor;
+                border-radius: 5px;
+                padding: 10px 50px;
+                color: #fff;
+                margin: 30px 0;
+                width: 220px;
+
+                &:hover {
+                  animation: pulse-1 1s ease infinite;
+                }
+              }
+
+              .socialBtns {
+                display: flex;
+                column-gap: 10px;
+
+                a {
+                  text-decoration: none;
+
+                  background: $blueBgColor;
+                  border-radius: 5px;
+                  padding: 6px 10px;
+                  color: #fff;
+
+                  &:hover {
+                    animation: pulse-1 1s ease infinite;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// ===================Responsive Design============================
+
+@media only screen and (max-width: 600px) {
+  main {
+    .contactSection {
+      .flex {
+        display: flex;
+        flex-direction: column;
+
+        .contactBox {
+          .contactInfoWrapper {
+            .contactInfo {
+              display: flex;
+              flex-direction: column;
+              row-gap: 28px;
+            }
+          }
+
+          .contactForm {
+            form {
+              .buttonSWrapper {
+                display: flex;
+                flex-direction: column;
+
+                .submitBtn {
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+
+        .iframe {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  main {
+    .contactSection {
+      .flex {
+        display: flex;
+        flex-direction: column;
+
+        .contactBox {
+          .contactInfoWrapper {
+            .contactInfo {
+              display: flex;
+              flex-wrap: wrap;
+              column-gap: 10px;
+              justify-content: space-around;
+
+              span {
+                text-align: center;
+              }
+            }
+          }
+        }
+
+        .iframe {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    .contactSection {
+      .flex {
+        display: flex;
+        flex-direction: column;
+
+        .contactBox {
+          .contactInfoWrapper {
+            .contactInfo {
+              display: flex;
+              flex-wrap: wrap;
+              column-gap: 10px;
+              justify-content: space-around;
+
+              span {
+                text-align: center;
+              }
+            }
+          }
+
+          .contactForm {
+            form {
+              .buttonSWrapper {
+                display: flex;
+                flex-direction: column;
+
+                .submitBtn {
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+
+        .iframe {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  main {
+    .contactSection {
+      .flex {
+        display: flex;
+        flex-direction: row;
+
+        .contactBox {
+          .contactInfoWrapper {
+            .contactInfo {
+              display: flex;
+              flex-wrap: wrap;
+              column-gap: 10px;
+              justify-content: space-around;
+
+              span {
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

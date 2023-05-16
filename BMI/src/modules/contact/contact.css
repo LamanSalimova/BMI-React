@@ -1,0 +1,221 @@
+main .pageHeader {
+  margin: 24px 0;
+  border-bottom: 1px solid #c6c6c6;
+}
+main .pageHeader .rootLinks {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+}
+main .pageHeader .rootLinks .routerLinkItem {
+  color: #838383;
+  font-family: Poppins;
+  line-height: 21px;
+  font-weight: 500;
+  text-decoration: none;
+}
+main .pageHeader .rootLinks .chevronRight {
+  color: #838383;
+}
+main .pageHeader h3 {
+  color: #303030;
+  font-family: Poppins;
+  font-size: 22px;
+  line-height: 33px;
+  font-weight: 700;
+  text-decoration: none;
+  margin-top: 10px;
+}
+main .contactSection {
+  margin: 40px 0;
+}
+main .contactSection .flex {
+  display: flex;
+}
+main .contactSection .flex .contactBox {
+  max-width: 100%;
+}
+main .contactSection .flex .contactBox .contactInfoWrapper {
+  background-color: #3d54a1;
+  background-image: url("../../assets/images/bubbleBg.png");
+  padding: 40px 0;
+}
+main .contactSection .flex .contactBox .contactInfoWrapper .contactInfo {
+  display: flex;
+  -moz-column-gap: 80px;
+       column-gap: 80px;
+  justify-content: center;
+  align-items: center;
+}
+main .contactSection .flex .contactBox .contactInfoWrapper .contactInfo .contactInfoItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+}
+main .contactSection .flex .contactBox .contactInfoWrapper .contactInfo .contactInfoItem span {
+  color: #fff;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+}
+main .contactSection .flex .contactBox .contactForm {
+  border: 1px solid #e0dcdc;
+  padding: 40px;
+}
+main .contactSection .flex .contactBox .contactForm form h5 {
+  color: #303030;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+}
+main .contactSection .flex .contactBox .contactForm form input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 12px;
+  border-bottom: 1px solid #c6c6c6;
+}
+main .contactSection .flex .contactBox .contactForm form input::-moz-placeholder {
+  color: #939393;
+  font-size: 15px;
+  line-height: 23px;
+  font-family: Poppins;
+  font-weight: 500;
+}
+main .contactSection .flex .contactBox .contactForm form input::placeholder {
+  color: #939393;
+  font-size: 15px;
+  line-height: 23px;
+  font-family: Poppins;
+  font-weight: 500;
+}
+main .contactSection .flex .contactBox .contactForm form textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 12px;
+  border: 1px solid #c6c6c6;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+main .contactSection .flex .contactBox .contactForm form .buttonSWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+main .contactSection .flex .contactBox .contactForm form .buttonSWrapper .submitBtn {
+  display: inline-block;
+  border: none;
+  outline: none;
+  background: #3d54a1;
+  border-radius: 5px;
+  padding: 10px 50px;
+  color: #fff;
+  margin: 30px 0;
+  width: 220px;
+}
+main .contactSection .flex .contactBox .contactForm form .buttonSWrapper .submitBtn:hover {
+  animation: pulse-1 1s ease infinite;
+}
+main .contactSection .flex .contactBox .contactForm form .buttonSWrapper .socialBtns {
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+main .contactSection .flex .contactBox .contactForm form .buttonSWrapper .socialBtns a {
+  text-decoration: none;
+  background: #3d54a1;
+  border-radius: 5px;
+  padding: 6px 10px;
+  color: #fff;
+}
+main .contactSection .flex .contactBox .contactForm form .buttonSWrapper .socialBtns a:hover {
+  animation: pulse-1 1s ease infinite;
+}
+
+@media only screen and (max-width: 600px) {
+  main .contactSection .flex {
+    display: flex;
+    flex-direction: column;
+  }
+  main .contactSection .flex .contactBox .contactInfoWrapper .contactInfo {
+    display: flex;
+    flex-direction: column;
+    row-gap: 28px;
+  }
+  main .contactSection .flex .contactBox .contactForm form .buttonSWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  main .contactSection .flex .contactBox .contactForm form .buttonSWrapper .submitBtn {
+    width: 100%;
+  }
+  main .contactSection .flex .iframe {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 600px) {
+  main .contactSection .flex {
+    display: flex;
+    flex-direction: column;
+  }
+  main .contactSection .flex .contactBox .contactInfoWrapper .contactInfo {
+    display: flex;
+    flex-wrap: wrap;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    justify-content: space-around;
+  }
+  main .contactSection .flex .contactBox .contactInfoWrapper .contactInfo span {
+    text-align: center;
+  }
+  main .contactSection .flex .iframe {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  main .contactSection .flex {
+    display: flex;
+    flex-direction: column;
+  }
+  main .contactSection .flex .contactBox .contactInfoWrapper .contactInfo {
+    display: flex;
+    flex-wrap: wrap;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    justify-content: space-around;
+  }
+  main .contactSection .flex .contactBox .contactInfoWrapper .contactInfo span {
+    text-align: center;
+  }
+  main .contactSection .flex .contactBox .contactForm form .buttonSWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  main .contactSection .flex .contactBox .contactForm form .buttonSWrapper .submitBtn {
+    width: 100%;
+  }
+  main .contactSection .flex .iframe {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  main .contactSection .flex {
+    display: flex;
+    flex-direction: row;
+  }
+  main .contactSection .flex .contactBox .contactInfoWrapper .contactInfo {
+    display: flex;
+    flex-wrap: wrap;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    justify-content: space-around;
+  }
+  main .contactSection .flex .contactBox .contactInfoWrapper .contactInfo span {
+    text-align: center;
+  }
+}/*# sourceMappingURL=contact.css.map */
