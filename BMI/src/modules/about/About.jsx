@@ -22,7 +22,7 @@ export default function About() {
                 Ana səhifə
               </Link>
               <AiOutlineRight className="chevronRight" />
-              <Link to={ROUTES.CONTACT} className="routerLinkItem">
+              <Link to={ROUTES.ABOUT} className="routerLinkItem">
                 HAQQIMIZDA
               </Link>
             </div>
