@@ -11,12 +11,9 @@ body {
 }
 
 .container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 15px;
-  padding-left: 15px;
   width: 100%;
   max-width: 1140px;
+  margin: 0 auto;
 }
 
 @keyframes pulse-1 {
